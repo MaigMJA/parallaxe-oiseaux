@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>jQuery Parallax Plugin Demo</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script type="text/javascript" src="scripts/jquery.parallax-1.1.3.js"></script>
+<script type="text/javascript" src="scripts/jquery.localscroll-1.2.7-min.js"></script>
+<script type="text/javascript" src="scripts/jquery.scrollTo-1.4.2-min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$('#nav').localScroll(800);
+
+	//.parallax(xPosition, speedFactor, outerHeight) options:
+	//xPosition - Horizontal position of the element
+	//inertia - speed to move relative to vertical scroll. Example: 0.1 is one tenth the speed of scrolling, 2 is twice the speed of scrolling
+	//outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
+	$('#intro').parallax("50%", 0.1);
+	$('#second').parallax("50%", 0.1);
+	$('.bg').parallax("50%", 0.4);
+	$('#third').parallax("50%", 0.3);
+	$('#fourth').parallax("50%", 0.3);
+	$('#fifth').parallax("50%", 0.3);
+	$('#sixth').parallax("50%", 0.2);
+})
+</script>
+</head>
+
+<body>
+	<ul id="nav">
+			<li><a href="#intro" title="Next Section"><img src="images/dot.png" alt="Link" /></a></li>
+	    <li><a href="#second" title="Next Section"><img src="images/dot.png" alt="Link" /></a></li>
+	    <li><a href="#third" title="Next Section"><img src="images/dot.png" alt="Link" /></a></li>
+			<li><a href="#fourth" title="Next Section"><img src="images/dot.png" alt="Link" /></a></li>
+			<li><a href="#fifth" title="Next Section"><img src="images/dot.png" alt="Link" /></a></li>
+			<li><a href="#sixth" title="Next Section"><img src="images/dot.png" alt="Link" /></a></li>
+	</ul>
+
+	<div id="intro">
+		<div class="story">
+	    	<div class="float-left">
+			<h2>Les oiseaux</h2>
+			<h3>Méditation poétique, 1820</h3>
+	        <p>Orchestre du Très-Haut, bardes de ses louanges, </br>
+						Ils chantent à l'été des notes de bonheur ; </br>
+						Ils parcourent les airs avec des ailes d'anges </br>
+						Échappés tout joyeux des jardins du Seigneur.</p>
+	        </div>
+	    </div> <!--.story-->
+	</div> <!--#intro-->
+
+	<div id="second">
+		<div class="story"><div class="bg"></div>
+	    	<div class="float-right">
+	            <p>Tant que durent les fleurs, tant que l'épi qu'on coupe </br>
+							Laisse tomber un grain sur les sillons jaunis, </br>
+							Tant que le rude hiver n'a pas gelé la coupe </br>
+							Où leurs pieds vont poser comme aux bords de leurs nids,</p>
+	        </div>
+	    </div> <!--.story-->
+
+	</div> <!--#second-->
+
+	<div id="third">
+		<div class="story">
+	    	<div class="float-left">
+	            <p>Ils remplissent le ciel de musique et de joie : </br>
+							La jeune fille embaume et verdit leur prison, </br>
+							L'enfant passe la main sur leur duvet de soie, </br>
+							Le vieillard les nourrit au seuil de sa maison.</p>
+	        </div>
+	    </div> <!--.story-->
+	</div> <!--#third-->
+
+	<div id="fourth">
+		<div class="story">
+				<div class="float-right">
+							<p>Mais dans les mois d'hiver, quand la neige et le givre </br>
+							Ont remplacé la feuille et le fruit, où vont-ils ? </br>
+							Ont-ils cessé d'aimer ? Ont-ils cessé de vivre ? </br>
+							Nul ne sait le secret de leurs lointains exils.</p>
+					</div>
+			</div> <!--.story-->
+	</div> <!--#fourth-->
+
+	<div id="fifth">
+		<div class="story">
+				<div class="float-left">
+							<p>On voit pendre à la branche un nid rempli d'écailles, </br>
+							Dont le vent pluvieux balance un noir débris ; </br>
+							Pauvre maison en deuil et vieux pan de murailles </br>
+							Que les petits, hier, réjouissaient de cris.</h3>
+					</div>
+			</div> <!--.story-->
+	</div> <!--#fifth-->
+
+	<div id="sixth">
+		<div class="story">
+				<div class="float-right">
+							<p>Ô mes charmants oiseaux, vous si joyeux d'éclore ! </br>
+							La vie est donc un piége où le bon Dieu vous prend ? </br>
+							Hélas ! c'est comme nous. Et nous chantons encore ! </br>
+							Que Dieu serait cruel, s'il n'était pas si grand !</p>
+							<h3>Alphonse de Lamartine.</h3>
+					</div>
+			</div> <!--.story-->
+	</div> <!--#six-->
